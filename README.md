@@ -1,5 +1,7 @@
 # AMD_Robotics_Hackathon_2025_AirHockey_pi05_ROCm
 
+![Mission 2 Air Hockey](mission2/video/mission2_airhockey.gif)
+
 ![npaka studio x EmplifAI Team Image](img/team_img.jpeg)
 
 **Title:** AMD_RoboticHackathon2025-AirHockey_pi05_ROCm
@@ -24,10 +26,12 @@ This project aims to enable the SO-101 robot arm to play Air Hockey. We utilized
 **Delivery URL**
 
 **Mission 1:**
+![Mission 1 Picking](mission1/video/mission1_picking.gif)
 - Dataset: [npaka/picking-amd-50](https://huggingface.co/datasets/npaka/picking-amd-50)
 - Model: [npaka/picking-amd-50-pi05-50000](https://huggingface.co/npaka/picking-amd-50-pi05-50000)
 
 **Mission 2:**
+![Mission 2 Air Hockey](mission2/video/mission2_airhockey.gif)
 - Dataset: [npaka/air-hockey-amd](https://huggingface.co/datasets/npaka/air-hockey-amd)
 - Model: [npaka/air-hockey-amd-pi05-100000](https://huggingface.co/npaka/air-hockey-amd-pi05-100000)
 
