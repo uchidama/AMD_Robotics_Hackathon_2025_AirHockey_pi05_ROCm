@@ -24,12 +24,15 @@ A key feature of our approach is the adoption of the state-of-the-art robot foun
 
 ### 3. Technical implementations
 - **Teleoperation / Dataset capture**
+
     We used lerobot to collect demonstration data of humans playing Air Hockey.
 
 - **Training**
+
     We utilized the ROCm environment on the AMD Developer Cloud for training. Using the collected data, we fine-tuned the multimodal model pi0.5, employing a training pipeline that efficiently leveraged GPU resources.
 
 - **Inference**
+
     We control the SO-101 arm by performing inference with the trained model. By generating actions directly from visual information, we achieved smooth puck returns.
 
 
