@@ -1,0 +1,51 @@
+{
+  "os":  "Linux-6.1.0-39-amd64-x86_64-with-glibc2.39",
+  "python":  "CPython 3.12.3",
+  "startedAt":  "2025-12-06T05:27:05.979545Z",
+  "args":  [
+    "--dataset.repo_id=npaka/air-hockey-amd",
+    "--batch_size=1",
+    "--steps=50000",
+    "--output_dir=outputs/train/air-hockey-amd-pi05-50000",
+    "--job_name=air-hockey-amd-pi05-50000",
+    "--policy.device=cuda",
+    "--policy.type=pi05",
+    "--policy.pretrained_path=lerobot/pi05_base",
+    "--policy.push_to_hub=false",
+    "--wandb.enable=true",
+    "--save_freq=10000"
+  ],
+  "program":  "/opt/venv/bin/lerobot-train",
+  "root":  "outputs/train/air-hockey-amd-pi05-50000",
+  "host":  "robotics-jupyter-launcher-6468",
+  "executable":  "/opt/venv/bin/python",
+  "cpu_count":  160,
+  "cpu_count_logical":  160,
+  "gpu":  "AMD Instinct MI300X VF",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "2162185003008",
+      "used":  "1719372701696"
+    }
+  },
+  "memory":  {
+    "total":  "2029207175168"
+  },
+  "gpu_amd":  [
+    {
+      "id":  "0",
+      "uniqueId":  "0xc4c703def5ea04b9",
+      "vbiosVersion":  "113-M3000100-103",
+      "performanceLevel":  "auto",
+      "maxPower":  "750.0",
+      "series":  "AMD Instinct MI300X VF",
+      "model":  "0x74b5",
+      "vendor":  "Advanced Micro Devices, Inc. [AMD/ATI]",
+      "sku":  "M3000100",
+      "sclkRange":  "500Mhz - 2100Mhz",
+      "mclkRange":  "900Mhz - 1300Mhz"
+    }
+  ],
+  "writerId":  "yzxaqf3fqa9rsc7ozx49bhbknkshgj62"
+}

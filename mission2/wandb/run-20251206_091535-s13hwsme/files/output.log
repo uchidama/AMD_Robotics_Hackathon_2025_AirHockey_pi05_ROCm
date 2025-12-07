@@ -1,0 +1,528 @@
+INFO 2025-12-06 09:15:35 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2025-12-06 09:15:35 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/npaka3/lerobot/runs/s13hwsme[0m
+INFO 2025-12-06 09:15:35 ot_train.py:183 Creating dataset
+INFO 2025-12-06 09:15:36 ot_train.py:202 Creating policy
+The PI05 model is a direct port of the OpenPI implementation.
+This implementation follows the original OpenPI structure for compatibility.
+Original implementation: https://github.com/Physical-Intelligence/openpi
+Loading model from: outputs/train/air-hockey-amd-pi05-50000/checkpoints/last/pretrained_model
+✓ Loaded state dict from model.safetensors
+WARNING 2025-12-06 09:16:24 ng_pi05.py:1022 Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.bias
+WARNING 2025-12-06 09:16:24 ng_pi05.py:1022 Vision embedding key might need handling: model.paligemma_with_expert.paligemma.model.vision_tower.vision_model.embeddings.patch_embedding.weight
+Warning: Could not remap state dict keys: Error(s) in loading state_dict for PI05Policy:
+	Missing key(s) in state_dict: "model.paligemma_with_expert.paligemma.model.language_model.embed_tokens.weight".
+INFO 2025-12-06 09:16:34 ot_train.py:247 Creating optimizer and scheduler
+INFO 2025-12-06 09:17:18 ot_train.py:259 [1m[33mOutput dir:[0m outputs/train/air-hockey-amd-pi05-50000
+INFO 2025-12-06 09:17:18 ot_train.py:262 cfg.steps=100000 (100K)
+INFO 2025-12-06 09:17:18 ot_train.py:263 dataset.num_frames=36046 (36K)
+INFO 2025-12-06 09:17:18 ot_train.py:264 dataset.num_episodes=21
+INFO 2025-12-06 09:17:18 ot_train.py:267 Effective batch size: 1 x 1 = 1
+INFO 2025-12-06 09:17:18 ot_train.py:268 num_learnable_params=3616757520 (4B)
+INFO 2025-12-06 09:17:18 ot_train.py:269 num_total_params=3616757520 (4B)
+INFO 2025-12-06 09:17:19 ot_train.py:324 Start offline training on a fixed dataset
+INFO 2025-12-06 09:18:24 ot_train.py:351 step:50K smpl:50K ep:29 epch:1.39 loss:0.152 grdn:1.995 lr:2.5e-06 updt_s:0.317 data_s:0.007
+WARNING 2025-12-06 09:18:24 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:19:15 ot_train.py:351 step:50K smpl:50K ep:29 epch:1.40 loss:0.140 grdn:1.799 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 09:19:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:20:07 ot_train.py:351 step:51K smpl:51K ep:29 epch:1.40 loss:0.172 grdn:2.365 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 09:20:07 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:20:58 ot_train.py:351 step:51K smpl:51K ep:30 epch:1.41 loss:0.173 grdn:2.339 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 09:20:58 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:21:50 ot_train.py:351 step:51K smpl:51K ep:30 epch:1.41 loss:0.142 grdn:1.818 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 09:21:50 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:22:41 ot_train.py:351 step:51K smpl:51K ep:30 epch:1.42 loss:0.164 grdn:2.097 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:22:41 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:23:32 ot_train.py:351 step:51K smpl:51K ep:30 epch:1.43 loss:0.149 grdn:1.885 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 09:23:32 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:24:23 ot_train.py:351 step:52K smpl:52K ep:30 epch:1.43 loss:0.146 grdn:1.857 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:24:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:25:15 ot_train.py:351 step:52K smpl:52K ep:30 epch:1.44 loss:0.155 grdn:1.881 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 09:25:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:26:06 ot_train.py:351 step:52K smpl:52K ep:30 epch:1.44 loss:0.162 grdn:2.003 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 09:26:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:26:57 ot_train.py:351 step:52K smpl:52K ep:30 epch:1.45 loss:0.152 grdn:1.927 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 09:26:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:27:48 ot_train.py:351 step:52K smpl:52K ep:31 epch:1.45 loss:0.154 grdn:1.939 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:27:48 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:28:39 ot_train.py:351 step:53K smpl:53K ep:31 epch:1.46 loss:0.154 grdn:1.953 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:28:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:29:31 ot_train.py:351 step:53K smpl:53K ep:31 epch:1.46 loss:0.157 grdn:1.993 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 09:29:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:30:22 ot_train.py:351 step:53K smpl:53K ep:31 epch:1.47 loss:0.161 grdn:2.015 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:30:22 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:31:13 ot_train.py:351 step:53K smpl:53K ep:31 epch:1.48 loss:0.150 grdn:1.859 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:31:13 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:32:03 ot_train.py:351 step:53K smpl:53K ep:31 epch:1.48 loss:0.165 grdn:2.085 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:32:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:32:55 ot_train.py:351 step:54K smpl:54K ep:31 epch:1.49 loss:0.148 grdn:1.865 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:32:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:33:46 ot_train.py:351 step:54K smpl:54K ep:31 epch:1.49 loss:0.151 grdn:1.903 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:33:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:34:37 ot_train.py:351 step:54K smpl:54K ep:31 epch:1.50 loss:0.143 grdn:1.874 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:34:37 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:35:28 ot_train.py:351 step:54K smpl:54K ep:32 epch:1.50 loss:0.157 grdn:1.957 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:35:28 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:36:19 ot_train.py:351 step:54K smpl:54K ep:32 epch:1.51 loss:0.148 grdn:1.957 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:36:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:37:10 ot_train.py:351 step:55K smpl:55K ep:32 epch:1.51 loss:0.143 grdn:1.790 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:37:10 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:38:01 ot_train.py:351 step:55K smpl:55K ep:32 epch:1.52 loss:0.158 grdn:1.989 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:38:01 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:38:52 ot_train.py:351 step:55K smpl:55K ep:32 epch:1.53 loss:0.155 grdn:1.853 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:38:52 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:39:44 ot_train.py:351 step:55K smpl:55K ep:32 epch:1.53 loss:0.146 grdn:1.837 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:39:44 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:40:34 ot_train.py:351 step:55K smpl:55K ep:32 epch:1.54 loss:0.174 grdn:2.168 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:40:34 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:41:25 ot_train.py:351 step:56K smpl:56K ep:32 epch:1.54 loss:0.155 grdn:1.934 lr:2.5e-06 updt_s:0.249 data_s:0.002
+WARNING 2025-12-06 09:41:25 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:42:16 ot_train.py:351 step:56K smpl:56K ep:33 epch:1.55 loss:0.161 grdn:1.952 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:42:16 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:43:07 ot_train.py:351 step:56K smpl:56K ep:33 epch:1.55 loss:0.165 grdn:2.010 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:43:07 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:43:58 ot_train.py:351 step:56K smpl:56K ep:33 epch:1.56 loss:0.189 grdn:2.476 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:43:58 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:44:49 ot_train.py:351 step:56K smpl:56K ep:33 epch:1.56 loss:0.163 grdn:2.070 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:44:49 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:45:40 ot_train.py:351 step:57K smpl:57K ep:33 epch:1.57 loss:0.167 grdn:2.310 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:45:40 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:46:31 ot_train.py:351 step:57K smpl:57K ep:33 epch:1.58 loss:0.167 grdn:1.932 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:46:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:47:23 ot_train.py:351 step:57K smpl:57K ep:33 epch:1.58 loss:0.156 grdn:1.916 lr:2.5e-06 updt_s:0.254 data_s:0.002
+WARNING 2025-12-06 09:47:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:48:15 ot_train.py:351 step:57K smpl:57K ep:33 epch:1.59 loss:0.158 grdn:1.917 lr:2.5e-06 updt_s:0.254 data_s:0.002
+WARNING 2025-12-06 09:48:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:49:05 ot_train.py:351 step:57K smpl:57K ep:33 epch:1.59 loss:0.144 grdn:1.888 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:49:05 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:49:57 ot_train.py:351 step:58K smpl:58K ep:34 epch:1.60 loss:0.157 grdn:2.014 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 09:49:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:50:48 ot_train.py:351 step:58K smpl:58K ep:34 epch:1.60 loss:0.151 grdn:1.986 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 09:50:48 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:51:39 ot_train.py:351 step:58K smpl:58K ep:34 epch:1.61 loss:0.143 grdn:1.886 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 09:51:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:52:31 ot_train.py:351 step:58K smpl:58K ep:34 epch:1.61 loss:0.155 grdn:1.974 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 09:52:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:53:22 ot_train.py:351 step:58K smpl:58K ep:34 epch:1.62 loss:0.173 grdn:2.130 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 09:53:22 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:54:14 ot_train.py:351 step:59K smpl:59K ep:34 epch:1.63 loss:0.147 grdn:1.964 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 09:54:14 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:55:06 ot_train.py:351 step:59K smpl:59K ep:34 epch:1.63 loss:0.153 grdn:2.038 lr:2.5e-06 updt_s:0.255 data_s:0.002
+WARNING 2025-12-06 09:55:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:55:57 ot_train.py:351 step:59K smpl:59K ep:34 epch:1.64 loss:0.141 grdn:1.908 lr:2.5e-06 updt_s:0.254 data_s:0.002
+WARNING 2025-12-06 09:55:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:56:49 ot_train.py:351 step:59K smpl:59K ep:34 epch:1.64 loss:0.153 grdn:1.928 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 09:56:49 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:57:41 ot_train.py:351 step:59K smpl:59K ep:35 epch:1.65 loss:0.149 grdn:1.899 lr:2.5e-06 updt_s:0.254 data_s:0.002
+WARNING 2025-12-06 09:57:41 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:58:32 ot_train.py:351 step:60K smpl:60K ep:35 epch:1.65 loss:0.171 grdn:1.920 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 09:58:32 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 09:59:24 ot_train.py:351 step:60K smpl:60K ep:35 epch:1.66 loss:0.140 grdn:1.798 lr:2.5e-06 updt_s:0.254 data_s:0.002
+WARNING 2025-12-06 09:59:24 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:00:15 ot_train.py:351 step:60K smpl:60K ep:35 epch:1.66 loss:0.154 grdn:1.964 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 10:00:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:00:15 ot_train.py:361 Checkpoint policy after step 60000
+INFO 2025-12-06 10:03:29 ot_train.py:351 step:60K smpl:60K ep:35 epch:1.67 loss:0.158 grdn:2.081 lr:2.5e-06 updt_s:0.256 data_s:0.002
+WARNING 2025-12-06 10:03:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:04:21 ot_train.py:351 step:60K smpl:60K ep:35 epch:1.68 loss:0.159 grdn:1.856 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 10:04:21 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:05:11 ot_train.py:351 step:61K smpl:61K ep:35 epch:1.68 loss:0.158 grdn:2.189 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 10:05:11 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:06:03 ot_train.py:351 step:61K smpl:61K ep:35 epch:1.69 loss:0.147 grdn:1.818 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 10:06:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:06:50 ot_train.py:351 step:61K smpl:61K ep:36 epch:1.69 loss:0.146 grdn:1.829 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:06:50 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:07:38 ot_train.py:351 step:61K smpl:61K ep:36 epch:1.70 loss:0.141 grdn:1.903 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:07:38 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:08:25 ot_train.py:351 step:61K smpl:61K ep:36 epch:1.70 loss:0.156 grdn:2.035 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:08:25 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:09:12 ot_train.py:351 step:62K smpl:62K ep:36 epch:1.71 loss:0.157 grdn:2.020 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:09:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:10:00 ot_train.py:351 step:62K smpl:62K ep:36 epch:1.71 loss:0.145 grdn:1.989 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:10:00 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:10:47 ot_train.py:351 step:62K smpl:62K ep:36 epch:1.72 loss:0.156 grdn:1.957 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:10:47 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:11:34 ot_train.py:351 step:62K smpl:62K ep:36 epch:1.73 loss:0.148 grdn:1.879 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:11:34 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:12:22 ot_train.py:351 step:62K smpl:62K ep:36 epch:1.73 loss:0.162 grdn:1.983 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:12:22 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:13:09 ot_train.py:351 step:63K smpl:63K ep:36 epch:1.74 loss:0.154 grdn:1.966 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:13:09 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:13:57 ot_train.py:351 step:63K smpl:63K ep:37 epch:1.74 loss:0.171 grdn:2.028 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:13:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:14:44 ot_train.py:351 step:63K smpl:63K ep:37 epch:1.75 loss:0.151 grdn:1.889 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:14:44 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:15:31 ot_train.py:351 step:63K smpl:63K ep:37 epch:1.75 loss:0.161 grdn:2.106 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:15:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:16:19 ot_train.py:351 step:63K smpl:63K ep:37 epch:1.76 loss:0.149 grdn:1.926 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:16:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:17:06 ot_train.py:351 step:64K smpl:64K ep:37 epch:1.76 loss:0.143 grdn:1.886 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:17:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:17:53 ot_train.py:351 step:64K smpl:64K ep:37 epch:1.77 loss:0.161 grdn:2.029 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:17:53 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:18:41 ot_train.py:351 step:64K smpl:64K ep:37 epch:1.78 loss:0.154 grdn:2.105 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:18:41 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:19:28 ot_train.py:351 step:64K smpl:64K ep:37 epch:1.78 loss:0.157 grdn:2.024 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:19:28 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:20:15 ot_train.py:351 step:64K smpl:64K ep:38 epch:1.79 loss:0.153 grdn:1.901 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:20:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:21:02 ot_train.py:351 step:65K smpl:65K ep:38 epch:1.79 loss:0.164 grdn:2.091 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:21:02 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:21:50 ot_train.py:351 step:65K smpl:65K ep:38 epch:1.80 loss:0.154 grdn:2.034 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:21:50 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:22:37 ot_train.py:351 step:65K smpl:65K ep:38 epch:1.80 loss:0.150 grdn:1.925 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:22:37 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:23:24 ot_train.py:351 step:65K smpl:65K ep:38 epch:1.81 loss:0.160 grdn:2.106 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:23:24 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:24:11 ot_train.py:351 step:65K smpl:65K ep:38 epch:1.81 loss:0.142 grdn:1.906 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:24:11 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:24:59 ot_train.py:351 step:66K smpl:66K ep:38 epch:1.82 loss:0.171 grdn:2.026 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:24:59 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:25:46 ot_train.py:351 step:66K smpl:66K ep:38 epch:1.83 loss:0.146 grdn:1.863 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:25:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:26:34 ot_train.py:351 step:66K smpl:66K ep:38 epch:1.83 loss:0.150 grdn:1.998 lr:2.5e-06 updt_s:0.235 data_s:0.002
+WARNING 2025-12-06 10:26:34 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:27:21 ot_train.py:351 step:66K smpl:66K ep:39 epch:1.84 loss:0.147 grdn:1.930 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:27:21 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:28:08 ot_train.py:351 step:66K smpl:66K ep:39 epch:1.84 loss:0.162 grdn:2.004 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:28:08 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:28:55 ot_train.py:351 step:67K smpl:67K ep:39 epch:1.85 loss:0.158 grdn:1.997 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:28:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:29:43 ot_train.py:351 step:67K smpl:67K ep:39 epch:1.85 loss:0.149 grdn:1.928 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:29:43 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:30:30 ot_train.py:351 step:67K smpl:67K ep:39 epch:1.86 loss:0.144 grdn:2.017 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:30:30 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:31:17 ot_train.py:351 step:67K smpl:67K ep:39 epch:1.86 loss:0.156 grdn:2.043 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:31:17 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:32:05 ot_train.py:351 step:67K smpl:67K ep:39 epch:1.87 loss:0.155 grdn:1.924 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:32:05 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:32:52 ot_train.py:351 step:68K smpl:68K ep:39 epch:1.88 loss:0.149 grdn:2.096 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:32:52 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:33:39 ot_train.py:351 step:68K smpl:68K ep:39 epch:1.88 loss:0.141 grdn:1.866 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:33:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:34:27 ot_train.py:351 step:68K smpl:68K ep:40 epch:1.89 loss:0.150 grdn:2.020 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:34:27 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:35:15 ot_train.py:351 step:68K smpl:68K ep:40 epch:1.89 loss:0.151 grdn:2.003 lr:2.5e-06 updt_s:0.239 data_s:0.002
+WARNING 2025-12-06 10:35:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:36:06 ot_train.py:351 step:68K smpl:68K ep:40 epch:1.90 loss:0.136 grdn:1.816 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 10:36:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:36:58 ot_train.py:351 step:69K smpl:69K ep:40 epch:1.90 loss:0.141 grdn:1.829 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 10:36:58 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:37:47 ot_train.py:351 step:69K smpl:69K ep:40 epch:1.91 loss:0.147 grdn:2.023 lr:2.5e-06 updt_s:0.242 data_s:0.002
+WARNING 2025-12-06 10:37:47 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:38:34 ot_train.py:351 step:69K smpl:69K ep:40 epch:1.91 loss:0.130 grdn:1.810 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:38:34 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:39:21 ot_train.py:351 step:69K smpl:69K ep:40 epch:1.92 loss:0.160 grdn:2.262 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:39:21 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:40:09 ot_train.py:351 step:69K smpl:69K ep:40 epch:1.93 loss:0.162 grdn:2.072 lr:2.5e-06 updt_s:0.234 data_s:0.002
+WARNING 2025-12-06 10:40:09 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:40:56 ot_train.py:351 step:70K smpl:70K ep:41 epch:1.93 loss:0.149 grdn:2.038 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:40:56 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:41:43 ot_train.py:351 step:70K smpl:70K ep:41 epch:1.94 loss:0.147 grdn:1.944 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:41:43 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:42:31 ot_train.py:351 step:70K smpl:70K ep:41 epch:1.94 loss:0.163 grdn:2.202 lr:2.5e-06 updt_s:0.233 data_s:0.002
+WARNING 2025-12-06 10:42:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:42:31 ot_train.py:361 Checkpoint policy after step 70000
+INFO 2025-12-06 10:45:40 ot_train.py:351 step:70K smpl:70K ep:41 epch:1.95 loss:0.153 grdn:2.000 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 10:45:40 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:46:31 ot_train.py:351 step:70K smpl:70K ep:41 epch:1.95 loss:0.166 grdn:2.030 lr:2.5e-06 updt_s:0.249 data_s:0.002
+WARNING 2025-12-06 10:46:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:47:22 ot_train.py:351 step:71K smpl:71K ep:41 epch:1.96 loss:0.151 grdn:2.137 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 10:47:22 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:48:13 ot_train.py:351 step:71K smpl:71K ep:41 epch:1.96 loss:0.156 grdn:1.966 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 10:48:13 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:49:04 ot_train.py:351 step:71K smpl:71K ep:41 epch:1.97 loss:0.147 grdn:1.914 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 10:49:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:49:55 ot_train.py:351 step:71K smpl:71K ep:41 epch:1.98 loss:0.153 grdn:2.009 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 10:49:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:50:46 ot_train.py:351 step:71K smpl:71K ep:42 epch:1.98 loss:0.152 grdn:2.039 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 10:50:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:51:38 ot_train.py:351 step:72K smpl:72K ep:42 epch:1.99 loss:0.131 grdn:1.792 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 10:51:38 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:52:29 ot_train.py:351 step:72K smpl:72K ep:42 epch:1.99 loss:0.140 grdn:1.846 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 10:52:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:53:20 ot_train.py:351 step:72K smpl:72K ep:42 epch:2.00 loss:0.159 grdn:1.990 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 10:53:20 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:54:12 ot_train.py:351 step:72K smpl:72K ep:42 epch:2.00 loss:0.151 grdn:1.863 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 10:54:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:55:04 ot_train.py:351 step:72K smpl:72K ep:42 epch:2.01 loss:0.139 grdn:1.869 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 10:55:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:55:55 ot_train.py:351 step:73K smpl:73K ep:42 epch:2.01 loss:0.145 grdn:1.848 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 10:55:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:56:47 ot_train.py:351 step:73K smpl:73K ep:42 epch:2.02 loss:0.145 grdn:1.972 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 10:56:47 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:57:38 ot_train.py:351 step:73K smpl:73K ep:43 epch:2.03 loss:0.151 grdn:2.136 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 10:57:38 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:58:30 ot_train.py:351 step:73K smpl:73K ep:43 epch:2.03 loss:0.142 grdn:1.939 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 10:58:30 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 10:59:21 ot_train.py:351 step:73K smpl:73K ep:43 epch:2.04 loss:0.160 grdn:2.039 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 10:59:21 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:00:12 ot_train.py:351 step:74K smpl:74K ep:43 epch:2.04 loss:0.167 grdn:2.269 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 11:00:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:01:03 ot_train.py:351 step:74K smpl:74K ep:43 epch:2.05 loss:0.150 grdn:2.024 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 11:01:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:01:53 ot_train.py:351 step:74K smpl:74K ep:43 epch:2.05 loss:0.130 grdn:1.723 lr:2.5e-06 updt_s:0.246 data_s:0.002
+WARNING 2025-12-06 11:01:53 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:02:43 ot_train.py:351 step:74K smpl:74K ep:43 epch:2.06 loss:0.184 grdn:2.436 lr:2.5e-06 updt_s:0.246 data_s:0.002
+WARNING 2025-12-06 11:02:43 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:03:33 ot_train.py:351 step:74K smpl:74K ep:43 epch:2.06 loss:0.142 grdn:1.901 lr:2.5e-06 updt_s:0.245 data_s:0.002
+WARNING 2025-12-06 11:03:33 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:04:24 ot_train.py:351 step:75K smpl:75K ep:43 epch:2.07 loss:0.160 grdn:2.217 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 11:04:24 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:05:15 ot_train.py:351 step:75K smpl:75K ep:44 epch:2.08 loss:0.143 grdn:1.920 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 11:05:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:06:06 ot_train.py:351 step:75K smpl:75K ep:44 epch:2.08 loss:0.169 grdn:2.133 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 11:06:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:06:58 ot_train.py:351 step:75K smpl:75K ep:44 epch:2.09 loss:0.147 grdn:1.972 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:06:58 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:07:49 ot_train.py:351 step:75K smpl:75K ep:44 epch:2.09 loss:0.149 grdn:1.976 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:07:49 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:08:41 ot_train.py:351 step:76K smpl:76K ep:44 epch:2.10 loss:0.147 grdn:1.876 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:08:41 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:09:32 ot_train.py:351 step:76K smpl:76K ep:44 epch:2.10 loss:0.151 grdn:2.019 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:09:32 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:10:23 ot_train.py:351 step:76K smpl:76K ep:44 epch:2.11 loss:0.130 grdn:1.797 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 11:10:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:11:15 ot_train.py:351 step:76K smpl:76K ep:44 epch:2.11 loss:0.164 grdn:2.071 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 11:11:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:12:06 ot_train.py:351 step:76K smpl:76K ep:45 epch:2.12 loss:0.137 grdn:1.896 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 11:12:06 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:12:57 ot_train.py:351 step:77K smpl:77K ep:45 epch:2.13 loss:0.133 grdn:1.755 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:12:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:13:48 ot_train.py:351 step:77K smpl:77K ep:45 epch:2.13 loss:0.160 grdn:2.098 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 11:13:48 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:14:40 ot_train.py:351 step:77K smpl:77K ep:45 epch:2.14 loss:0.160 grdn:2.030 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 11:14:40 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:15:31 ot_train.py:351 step:77K smpl:77K ep:45 epch:2.14 loss:0.152 grdn:2.079 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 11:15:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:16:22 ot_train.py:351 step:77K smpl:77K ep:45 epch:2.15 loss:0.146 grdn:1.898 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 11:16:22 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:17:13 ot_train.py:351 step:78K smpl:78K ep:45 epch:2.15 loss:0.137 grdn:1.887 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 11:17:13 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:18:04 ot_train.py:351 step:78K smpl:78K ep:45 epch:2.16 loss:0.142 grdn:1.955 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 11:18:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:18:55 ot_train.py:351 step:78K smpl:78K ep:45 epch:2.16 loss:0.148 grdn:2.037 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:18:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:19:46 ot_train.py:351 step:78K smpl:78K ep:46 epch:2.17 loss:0.146 grdn:2.123 lr:2.5e-06 updt_s:0.248 data_s:0.002
+WARNING 2025-12-06 11:19:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:20:37 ot_train.py:351 step:78K smpl:78K ep:46 epch:2.17 loss:0.138 grdn:1.887 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:20:37 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:21:29 ot_train.py:351 step:79K smpl:79K ep:46 epch:2.18 loss:0.151 grdn:1.998 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:21:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:22:20 ot_train.py:351 step:79K smpl:79K ep:46 epch:2.19 loss:0.135 grdn:1.858 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:22:20 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:23:12 ot_train.py:351 step:79K smpl:79K ep:46 epch:2.19 loss:0.147 grdn:1.969 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:23:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:24:03 ot_train.py:351 step:79K smpl:79K ep:46 epch:2.20 loss:0.143 grdn:1.936 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:24:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:24:55 ot_train.py:351 step:79K smpl:79K ep:46 epch:2.20 loss:0.140 grdn:1.977 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:24:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:25:46 ot_train.py:351 step:80K smpl:80K ep:46 epch:2.21 loss:0.140 grdn:1.976 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:25:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:26:37 ot_train.py:351 step:80K smpl:80K ep:46 epch:2.21 loss:0.136 grdn:1.960 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:26:37 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:27:29 ot_train.py:351 step:80K smpl:80K ep:47 epch:2.22 loss:0.159 grdn:2.004 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:27:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:27:29 ot_train.py:361 Checkpoint policy after step 80000
+INFO 2025-12-06 11:30:45 ot_train.py:351 step:80K smpl:80K ep:47 epch:2.22 loss:0.153 grdn:2.135 lr:2.5e-06 updt_s:0.264 data_s:0.003
+WARNING 2025-12-06 11:30:45 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:31:39 ot_train.py:351 step:80K smpl:80K ep:47 epch:2.23 loss:0.146 grdn:2.044 lr:2.5e-06 updt_s:0.261 data_s:0.003
+WARNING 2025-12-06 11:31:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:32:31 ot_train.py:351 step:81K smpl:81K ep:47 epch:2.24 loss:0.156 grdn:2.123 lr:2.5e-06 updt_s:0.258 data_s:0.003
+WARNING 2025-12-06 11:32:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:33:24 ot_train.py:351 step:81K smpl:81K ep:47 epch:2.24 loss:0.158 grdn:2.335 lr:2.5e-06 updt_s:0.262 data_s:0.003
+WARNING 2025-12-06 11:33:24 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:34:17 ot_train.py:351 step:81K smpl:81K ep:47 epch:2.25 loss:0.137 grdn:1.931 lr:2.5e-06 updt_s:0.260 data_s:0.003
+WARNING 2025-12-06 11:34:17 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:35:10 ot_train.py:351 step:81K smpl:81K ep:47 epch:2.25 loss:0.137 grdn:1.877 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 11:35:10 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:36:02 ot_train.py:351 step:81K smpl:81K ep:47 epch:2.26 loss:0.142 grdn:1.820 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 11:36:02 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:36:55 ot_train.py:351 step:82K smpl:82K ep:48 epch:2.26 loss:0.144 grdn:2.026 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 11:36:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:37:48 ot_train.py:351 step:82K smpl:82K ep:48 epch:2.27 loss:0.130 grdn:1.819 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 11:37:48 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:38:39 ot_train.py:351 step:82K smpl:82K ep:48 epch:2.27 loss:0.144 grdn:2.000 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 11:38:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:39:29 ot_train.py:351 step:82K smpl:82K ep:48 epch:2.28 loss:0.157 grdn:2.009 lr:2.5e-06 updt_s:0.246 data_s:0.002
+WARNING 2025-12-06 11:39:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:40:19 ot_train.py:351 step:82K smpl:82K ep:48 epch:2.29 loss:0.142 grdn:1.858 lr:2.5e-06 updt_s:0.247 data_s:0.002
+WARNING 2025-12-06 11:40:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:41:09 ot_train.py:351 step:83K smpl:83K ep:48 epch:2.29 loss:0.148 grdn:1.947 lr:2.5e-06 updt_s:0.245 data_s:0.002
+WARNING 2025-12-06 11:41:09 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:41:59 ot_train.py:351 step:83K smpl:83K ep:48 epch:2.30 loss:0.161 grdn:2.233 lr:2.5e-06 updt_s:0.246 data_s:0.002
+WARNING 2025-12-06 11:41:59 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:42:49 ot_train.py:351 step:83K smpl:83K ep:48 epch:2.30 loss:0.137 grdn:1.967 lr:2.5e-06 updt_s:0.247 data_s:0.002
+WARNING 2025-12-06 11:42:49 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:43:39 ot_train.py:351 step:83K smpl:83K ep:48 epch:2.31 loss:0.145 grdn:1.990 lr:2.5e-06 updt_s:0.245 data_s:0.002
+WARNING 2025-12-06 11:43:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:44:29 ot_train.py:351 step:83K smpl:83K ep:49 epch:2.31 loss:0.154 grdn:2.066 lr:2.5e-06 updt_s:0.247 data_s:0.002
+WARNING 2025-12-06 11:44:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:45:19 ot_train.py:351 step:84K smpl:84K ep:49 epch:2.32 loss:0.137 grdn:1.959 lr:2.5e-06 updt_s:0.246 data_s:0.002
+WARNING 2025-12-06 11:45:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:46:10 ot_train.py:351 step:84K smpl:84K ep:49 epch:2.32 loss:0.156 grdn:2.115 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:46:10 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:47:02 ot_train.py:351 step:84K smpl:84K ep:49 epch:2.33 loss:0.134 grdn:1.875 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:47:02 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:47:54 ot_train.py:351 step:84K smpl:84K ep:49 epch:2.34 loss:0.138 grdn:2.047 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:47:54 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:48:45 ot_train.py:351 step:84K smpl:84K ep:49 epch:2.34 loss:0.149 grdn:2.033 lr:2.5e-06 updt_s:0.250 data_s:0.003
+WARNING 2025-12-06 11:48:45 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:49:36 ot_train.py:351 step:85K smpl:85K ep:49 epch:2.35 loss:0.156 grdn:2.105 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:49:36 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:50:27 ot_train.py:351 step:85K smpl:85K ep:49 epch:2.35 loss:0.148 grdn:2.006 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 11:50:27 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:51:19 ot_train.py:351 step:85K smpl:85K ep:50 epch:2.36 loss:0.166 grdn:2.112 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 11:51:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:52:11 ot_train.py:351 step:85K smpl:85K ep:50 epch:2.36 loss:0.140 grdn:2.085 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:52:11 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:53:02 ot_train.py:351 step:85K smpl:85K ep:50 epch:2.37 loss:0.133 grdn:1.880 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:53:02 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:53:53 ot_train.py:351 step:86K smpl:86K ep:50 epch:2.37 loss:0.152 grdn:2.032 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:53:53 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:54:45 ot_train.py:351 step:86K smpl:86K ep:50 epch:2.38 loss:0.137 grdn:1.933 lr:2.5e-06 updt_s:0.253 data_s:0.003
+WARNING 2025-12-06 11:54:45 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:55:36 ot_train.py:351 step:86K smpl:86K ep:50 epch:2.39 loss:0.148 grdn:2.034 lr:2.5e-06 updt_s:0.252 data_s:0.003
+WARNING 2025-12-06 11:55:36 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:56:29 ot_train.py:351 step:86K smpl:86K ep:50 epch:2.39 loss:0.141 grdn:1.986 lr:2.5e-06 updt_s:0.250 data_s:0.012
+WARNING 2025-12-06 11:56:29 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:57:20 ot_train.py:351 step:86K smpl:86K ep:50 epch:2.40 loss:0.123 grdn:1.817 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 11:57:20 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:58:11 ot_train.py:351 step:87K smpl:87K ep:50 epch:2.40 loss:0.146 grdn:2.616 lr:2.5e-06 updt_s:0.252 data_s:0.002
+WARNING 2025-12-06 11:58:11 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:59:03 ot_train.py:351 step:87K smpl:87K ep:51 epch:2.41 loss:0.136 grdn:1.916 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 11:59:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 11:59:55 ot_train.py:351 step:87K smpl:87K ep:51 epch:2.41 loss:0.141 grdn:1.999 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 11:59:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:00:47 ot_train.py:351 step:87K smpl:87K ep:51 epch:2.42 loss:0.132 grdn:2.189 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:00:47 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:01:39 ot_train.py:351 step:87K smpl:87K ep:51 epch:2.42 loss:0.137 grdn:1.959 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:01:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:02:31 ot_train.py:351 step:88K smpl:88K ep:51 epch:2.43 loss:0.131 grdn:1.941 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:02:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:03:23 ot_train.py:351 step:88K smpl:88K ep:51 epch:2.44 loss:0.142 grdn:2.057 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 12:03:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:04:15 ot_train.py:351 step:88K smpl:88K ep:51 epch:2.44 loss:0.153 grdn:2.152 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:04:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:05:07 ot_train.py:351 step:88K smpl:88K ep:51 epch:2.45 loss:0.140 grdn:2.076 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:05:07 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:05:59 ot_train.py:351 step:88K smpl:88K ep:52 epch:2.45 loss:0.143 grdn:2.148 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:05:59 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:06:51 ot_train.py:351 step:89K smpl:89K ep:52 epch:2.46 loss:0.142 grdn:1.976 lr:2.5e-06 updt_s:0.258 data_s:0.003
+WARNING 2025-12-06 12:06:51 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:07:44 ot_train.py:351 step:89K smpl:89K ep:52 epch:2.46 loss:0.137 grdn:1.970 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:07:44 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:08:36 ot_train.py:351 step:89K smpl:89K ep:52 epch:2.47 loss:0.139 grdn:2.033 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:08:36 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:09:28 ot_train.py:351 step:89K smpl:89K ep:52 epch:2.47 loss:0.149 grdn:2.248 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 12:09:28 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:10:20 ot_train.py:351 step:89K smpl:89K ep:52 epch:2.48 loss:0.156 grdn:2.294 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:10:20 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:11:12 ot_train.py:351 step:90K smpl:90K ep:52 epch:2.49 loss:0.137 grdn:1.907 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:11:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:12:04 ot_train.py:351 step:90K smpl:90K ep:52 epch:2.49 loss:0.143 grdn:2.121 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:12:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:12:57 ot_train.py:351 step:90K smpl:90K ep:52 epch:2.50 loss:0.139 grdn:2.002 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:12:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:12:57 ot_train.py:361 Checkpoint policy after step 90000
+INFO 2025-12-06 12:16:07 ot_train.py:351 step:90K smpl:90K ep:53 epch:2.50 loss:0.144 grdn:2.173 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 12:16:07 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:16:58 ot_train.py:351 step:90K smpl:90K ep:53 epch:2.51 loss:0.145 grdn:2.023 lr:2.5e-06 updt_s:0.251 data_s:0.003
+WARNING 2025-12-06 12:16:58 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:17:50 ot_train.py:351 step:91K smpl:91K ep:53 epch:2.51 loss:0.143 grdn:2.110 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:17:50 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:18:42 ot_train.py:351 step:91K smpl:91K ep:53 epch:2.52 loss:0.151 grdn:2.073 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 12:18:42 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:19:35 ot_train.py:351 step:91K smpl:91K ep:53 epch:2.52 loss:0.183 grdn:2.320 lr:2.5e-06 updt_s:0.258 data_s:0.003
+WARNING 2025-12-06 12:19:35 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:20:26 ot_train.py:351 step:91K smpl:91K ep:53 epch:2.53 loss:0.139 grdn:2.175 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 12:20:26 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:21:19 ot_train.py:351 step:91K smpl:91K ep:53 epch:2.54 loss:0.149 grdn:2.068 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:21:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:22:11 ot_train.py:351 step:92K smpl:92K ep:53 epch:2.54 loss:0.139 grdn:2.027 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:22:11 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:23:03 ot_train.py:351 step:92K smpl:92K ep:53 epch:2.55 loss:0.142 grdn:1.911 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:23:03 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:23:55 ot_train.py:351 step:92K smpl:92K ep:54 epch:2.55 loss:0.134 grdn:1.980 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:23:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:24:47 ot_train.py:351 step:92K smpl:92K ep:54 epch:2.56 loss:0.137 grdn:2.052 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:24:47 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:25:39 ot_train.py:351 step:92K smpl:92K ep:54 epch:2.56 loss:0.133 grdn:2.061 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:25:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:26:31 ot_train.py:351 step:93K smpl:93K ep:54 epch:2.57 loss:0.144 grdn:2.045 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:26:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:27:23 ot_train.py:351 step:93K smpl:93K ep:54 epch:2.57 loss:0.125 grdn:1.886 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:27:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:28:15 ot_train.py:351 step:93K smpl:93K ep:54 epch:2.58 loss:0.137 grdn:1.979 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:28:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:29:08 ot_train.py:351 step:93K smpl:93K ep:54 epch:2.59 loss:0.131 grdn:2.021 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 12:29:08 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:30:00 ot_train.py:351 step:93K smpl:93K ep:54 epch:2.59 loss:0.147 grdn:2.116 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:30:00 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:30:53 ot_train.py:351 step:94K smpl:94K ep:55 epch:2.60 loss:0.148 grdn:2.118 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 12:30:53 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:31:45 ot_train.py:351 step:94K smpl:94K ep:55 epch:2.60 loss:0.141 grdn:2.337 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:31:45 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:32:37 ot_train.py:351 step:94K smpl:94K ep:55 epch:2.61 loss:0.135 grdn:2.073 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:32:37 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:33:28 ot_train.py:351 step:94K smpl:94K ep:55 epch:2.61 loss:0.138 grdn:1.979 lr:2.5e-06 updt_s:0.249 data_s:0.002
+WARNING 2025-12-06 12:33:28 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:34:19 ot_train.py:351 step:94K smpl:94K ep:55 epch:2.62 loss:0.147 grdn:2.200 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 12:34:19 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:35:10 ot_train.py:351 step:95K smpl:95K ep:55 epch:2.62 loss:0.143 grdn:2.132 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 12:35:10 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:36:02 ot_train.py:351 step:95K smpl:95K ep:55 epch:2.63 loss:0.148 grdn:2.058 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:36:02 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:36:55 ot_train.py:351 step:95K smpl:95K ep:55 epch:2.64 loss:0.146 grdn:2.130 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:36:55 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:37:46 ot_train.py:351 step:95K smpl:95K ep:55 epch:2.64 loss:0.148 grdn:2.119 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:37:46 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:38:39 ot_train.py:351 step:95K smpl:95K ep:56 epch:2.65 loss:0.139 grdn:2.348 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:38:39 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:39:31 ot_train.py:351 step:96K smpl:96K ep:56 epch:2.65 loss:0.149 grdn:2.223 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:39:31 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:40:23 ot_train.py:351 step:96K smpl:96K ep:56 epch:2.66 loss:0.136 grdn:1.934 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:40:23 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:41:15 ot_train.py:351 step:96K smpl:96K ep:56 epch:2.66 loss:0.147 grdn:2.084 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:41:15 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:42:07 ot_train.py:351 step:96K smpl:96K ep:56 epch:2.67 loss:0.128 grdn:1.922 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:42:07 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:42:59 ot_train.py:351 step:96K smpl:96K ep:56 epch:2.67 loss:0.139 grdn:2.165 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:42:59 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:43:51 ot_train.py:351 step:97K smpl:97K ep:56 epch:2.68 loss:0.128 grdn:2.053 lr:2.5e-06 updt_s:0.259 data_s:0.003
+WARNING 2025-12-06 12:43:51 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:44:44 ot_train.py:351 step:97K smpl:97K ep:56 epch:2.69 loss:0.155 grdn:2.200 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:44:44 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:45:36 ot_train.py:351 step:97K smpl:97K ep:57 epch:2.69 loss:0.138 grdn:2.161 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:45:36 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:46:27 ot_train.py:351 step:97K smpl:97K ep:57 epch:2.70 loss:0.139 grdn:2.147 lr:2.5e-06 updt_s:0.254 data_s:0.003
+WARNING 2025-12-06 12:46:27 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:47:20 ot_train.py:351 step:97K smpl:97K ep:57 epch:2.70 loss:0.132 grdn:2.560 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:47:20 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:48:12 ot_train.py:351 step:98K smpl:98K ep:57 epch:2.71 loss:0.141 grdn:2.054 lr:2.5e-06 updt_s:0.258 data_s:0.003
+WARNING 2025-12-06 12:48:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:49:04 ot_train.py:351 step:98K smpl:98K ep:57 epch:2.71 loss:0.147 grdn:2.387 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:49:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:49:57 ot_train.py:351 step:98K smpl:98K ep:57 epch:2.72 loss:0.150 grdn:2.184 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:49:57 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:50:49 ot_train.py:351 step:98K smpl:98K ep:57 epch:2.72 loss:0.146 grdn:2.154 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:50:49 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:51:40 ot_train.py:351 step:98K smpl:98K ep:57 epch:2.73 loss:0.128 grdn:1.936 lr:2.5e-06 updt_s:0.250 data_s:0.003
+WARNING 2025-12-06 12:51:40 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:52:30 ot_train.py:351 step:99K smpl:99K ep:57 epch:2.74 loss:0.123 grdn:1.874 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 12:52:30 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:53:21 ot_train.py:351 step:99K smpl:99K ep:58 epch:2.74 loss:0.140 grdn:2.105 lr:2.5e-06 updt_s:0.251 data_s:0.002
+WARNING 2025-12-06 12:53:21 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:54:12 ot_train.py:351 step:99K smpl:99K ep:58 epch:2.75 loss:0.139 grdn:2.112 lr:2.5e-06 updt_s:0.250 data_s:0.002
+WARNING 2025-12-06 12:54:12 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:55:04 ot_train.py:351 step:99K smpl:99K ep:58 epch:2.75 loss:0.139 grdn:2.656 lr:2.5e-06 updt_s:0.253 data_s:0.002
+WARNING 2025-12-06 12:55:04 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:55:56 ot_train.py:351 step:99K smpl:99K ep:58 epch:2.76 loss:0.141 grdn:2.093 lr:2.5e-06 updt_s:0.256 data_s:0.003
+WARNING 2025-12-06 12:55:56 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:56:48 ot_train.py:351 step:100K smpl:100K ep:58 epch:2.76 loss:0.137 grdn:1.940 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:56:48 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:57:40 ot_train.py:351 step:100K smpl:100K ep:58 epch:2.77 loss:0.136 grdn:1.982 lr:2.5e-06 updt_s:0.255 data_s:0.003
+WARNING 2025-12-06 12:57:40 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:58:32 ot_train.py:351 step:100K smpl:100K ep:58 epch:2.77 loss:0.155 grdn:2.784 lr:2.5e-06 updt_s:0.257 data_s:0.003
+WARNING 2025-12-06 12:58:32 db_utils.py:141 WandB logging of key "loss_per_dim" was ignored as its type "<class 'list'>" is not handled by this wrapper.
+INFO 2025-12-06 12:58:32 ot_train.py:361 Checkpoint policy after step 100000
+INFO 2025-12-06 13:01:02 ot_train.py:430 End of training
